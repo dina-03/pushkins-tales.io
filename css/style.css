@@ -487,6 +487,7 @@ nav li img:hover {
     }
 }
 
+
 @-webkit-keyframes animCloud {
     from {
         -webkit-transform: translateX(100%)
@@ -549,15 +550,17 @@ nav li img:hover {
     animation: animCloud 80s infinite linear
 }
 
-.book{
-    z-index: 20;
-    width: 100px;
-    width: 200px;
-    height: 100px;
-    position: absolute;
-    bottom: 70px;
-    right: 50px;
-}
+
+
+/* saltan book animation */
+    .book{
+        z-index: 20;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 70px;
+        right: 50px;
+    }
 
 /* saltan end */
 
