@@ -1,0 +1,876 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 450px;
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(250, 235, 215, 0.9);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    padding: 0 50px;
+    border-bottom: 2px solid goldenrod;
+}
+
+nav h2 {
+    font-style: italic;
+    font-family: 'Comfortaa', cursive;
+    color: rgb(177, 130, 11);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav li img {
+    width: 50px;
+}
+
+nav li img:hover {
+    _width: 55px;
+    animation: pulse 0.3s linear;
+}
+
+/* start home site */
+.row1 {
+    font-family: 'Bad Script', cursive;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("./../img/\ bg-skazki.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+.row1 h3 {
+    border: 2px solid goldenrod;
+    color: goldenrod;
+    border-radius: 30px;
+    background-color: rgba(240, 248, 255, 0.87);
+    padding: 5px 20px;
+}
+
+.gold-fish {
+    position: absolute;
+    left: 45%;
+    top: 55%;
+
+}
+
+.fish-logo {
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+.gold-fish:hover,
+.fish-logo:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.gold-fish:hover {
+    border-radius: 30px;
+    background-color: rgba(240, 248, 255, 0.7);
+}
+
+.golden-rooster {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+
+}
+
+.rooster-logo {
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+.golden-rooster:hover {
+    border-radius: 30px;
+    background-color: rgba(240, 248, 255, 0.9);
+}
+
+.golden-rooster:hover,
+.rooster-logo:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.saltan {
+    position: absolute;
+    top: 150px;
+    right: 40%;
+
+}
+
+.saltan-logo {
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+.saltan:hover {
+    border-radius: 30px;
+    background-color: rgba(240, 248, 255, 0.9);
+}
+
+.saltan:hover,
+.saltan-logo:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.gorbunok {
+    position: absolute;
+    top: 290px;
+    right: 70px;
+
+}
+
+.gorbunok-logo {
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+.gorbunok:hover {
+    border-radius: 30px;
+    background-color: rgba(240, 248, 255, 0.7);
+}
+
+.gorbunok:hover,
+.gorbunok-logo:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.skazki-mini {
+    display: none;
+}
+
+/* end home site */
+
+/* start fish and fisherman */
+.row2 {
+    width: 100%;
+    height: 100vh;
+    background: url("./../img/bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.fish-container {
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fish-middle {
+    background-color: white;
+    margin: 0 auto;
+    padding-left: 35px;
+    border: 2px solid goldenrod;
+}
+
+/* .fish-middle  */
+.header {
+    background-attachment: fixed fixed;
+    position: absolute;
+    margin: 0 auto;
+    height: 70px;
+    _border: 2px solid goldenrod;
+
+}
+
+/* .fish-middle */
+.header h2 {
+    background: url("./../img/gold-header.png")no-repeat;
+    background-size: cover;
+    top: 75px;
+    text-align: center;
+    height: 70px;
+    font-family: 'Bad Script', cursive;
+    color: goldenrod;
+    font-weight: 800;
+    background-color: rgb(255, 255, 255);
+    vertical-align: middle;
+    padding: 10px 0 0 15px;
+}
+
+.scroll-text {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden auto;
+    padding: 90px 0;
+}
+
+.scroll-text i {
+    text-align: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 55%;
+}
+
+.scroll-text p {
+    font-family: 'Comfortaa', cursive;
+    color: rgb(53, 45, 3);
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.scroll-text p::first-letter {
+    font-size: 26px;
+    font-weight: 900;
+    color: rgb(167, 121, 6);
+}
+
+.scroll-text span {
+    font-family: 'Comfortaa', cursive;
+    _font-style: italic;
+    color: rgb(119, 87, 7);
+    padding-left: 1%;
+    font-weight: 600;
+}
+
+.fish-left {
+    position: relative;
+    _background-color: aliceblue;
+    height: 100vh;
+}
+
+.oldMan {
+    width: 350px;
+    height: 330px;
+    position: absolute;
+    background: url("./../img/starik.png") no-repeat;
+    bottom: 100px;
+    left: 200px;
+}
+
+.oldMan:hover {
+    background: url("./../img/starikAndFish.png");
+    transition: all .5s linear;
+}
+
+.fish-right {
+    position: relative;
+}
+
+.headstock {
+    position: absolute;
+    width: 450px;
+    height: 560px;
+    top: 150px;
+    right: 40px;
+    background: url("./../img/babka.png") no-repeat;
+}
+
+.headstock:hover {
+    background: url("./../img/carica.png");
+    transition: all .5s linear;
+}
+
+/* end fish and fisherman */
+
+/* golden-rooster start */
+.row3 {
+    _position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("./../img/bg-gold-rooster.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    _z-index: 1;
+}
+
+.golden-rooster-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 70px 15px;
+    margin: 0 15px;
+    _top: 70px;
+    _border: 1px solid rgb(245, 5, 5);
+}
+
+.rooster-left {
+    height: 100vh;
+    _border: 1px solid #000;
+}
+
+.rooster-flugel {
+    position: absolute;
+    top: 120px;
+    left: 130px;
+}
+
+.rooster-left img {
+    width: 150px;
+}
+
+.rooster-left img:hover {
+    animation: flip .5s linear;
+}
+
+.rooster-middle {
+    height: 100vh;
+    background-color: white;
+    padding-left: 35px;
+    border: 2px solid goldenrod;
+    _position: relative;
+}
+
+.rooster-middle .header h2 {
+    padding: 5px 10px;
+}
+
+.rooster-right {
+    height: 100vh;
+    position: relative;
+    padding-top: 50px;
+    _border: 1px solid #000;
+}
+
+.rooster-right .rooster-video {
+    height: 60vh;
+    background: url("./../img/table02.png") no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    padding: 50px 0 0 45px;
+    width: 450px;
+    bottom: 150px;
+    _top:280;
+    right: 70px;
+    position: absolute;
+    _border: 1px solid #000;
+}
+
+/*golden-rooster end */
+
+/* saltan start */
+.row4 {
+    width: 100%;
+    height: 100vh;
+    background-color: deepskyblue;
+    position: relative;
+    background: url(./../img/Lukomorie.jpeg);
+    background-size: cover;
+    overflow: hidden;
+    _z-index: 1;
+}
+
+/* animation cloud */
+.cloud {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    z-index: 9;
+}
+
+.cloud img {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.book-saltan{
+    width: 30%;
+    margin: 70px auto;
+    padding-left: 50px;
+    display: none;
+}
+
+.book-saltan .header{
+    padding-left: 30px;
+}
+
+.book-saltan .scroll-text{
+    padding: 70px 0 100px 50px;
+}
+
+.book-show{
+    transition: all 1s ease;
+}
+
+.btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 2px solid goldenrod;
+    border: 0;
+    background: url("./../img/ramka06.png")no-repeat;
+    background-color: rgba(95, 158, 160, 0.596);
+    background-size: cover;
+    color: #fff;
+    cursor: pointer;
+}
+.btn:hover{
+    color: gold;
+    border: 0;
+    background: url("./../img/ramka03.png")no-repeat;
+    background-size: cover;
+    background-color: rgba(95, 158, 160, 0.356);
+}
+
+.hide{
+    display: none;
+    transition: all 1s ease;
+    animation: smoothHide 2s 1;    
+}
+
+.show{
+    display: block;
+    transition: all 1s ease;
+    animation: smoothShow 2s 1;
+}
+
+@keyframes smoothShow{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes smoothHide{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+@-webkit-keyframes animCloud {
+    from {
+        -webkit-transform: translateX(100%)
+    }
+
+    to {
+        -webkit-transform: translateX(-100%)
+    }
+}
+
+@-moz-keyframes animCloud {
+    from {
+        -moz-transform: translateX(100%)
+    }
+
+    to {
+        -moz-transform: translateX(-100%)
+    }
+}
+
+@keyframes animCloud {
+    from {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%)
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%)
+    }
+}
+
+.cloud1 {
+    -webkit-animation: animCloud 20s infinite linear;
+    -moz-animation: animCloud 20s infinite linear;
+    animation: animCloud 20s infinite linear
+}
+
+.cloud2 {
+    -webkit-animation: animCloud 40s infinite linear;
+    -moz-animation: animCloud 40s infinite linear;
+    animation: animCloud 40s infinite linear
+}
+
+.cloud3 {
+    -webkit-animation: animCloud 60s infinite linear;
+    -moz-animation: animCloud 60s infinite linear;
+    animation: animCloud 60s infinite linear
+}
+
+.cloud4 {
+    -webkit-animation: animCloud 80s infinite linear;
+    -moz-animation: animCloud 80s infinite linear;
+    animation: animCloud 80s infinite linear
+}
+
+
+
+/* saltan book animation */
+    .book{
+        z-index: 20;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 70px;
+        right: 50px;
+    }
+
+    /* .book img{
+        width: 200px;
+    }
+
+    .book a{
+        color: rgb(248, 215, 132);
+        font-family: 'Bad Script', cursive;
+        display: block;
+        /* bottom: 70px;
+        right: 50px; */
+        text-align: center;
+        margin-bottom: -40px;
+    }
+
+    .book h3 a:hover{
+        color: aliceblue;
+    } */
+
+/* saltan end */
+
+/* gorbunok start */
+.row5 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #000;
+}
+
+/* video */
+.intro {
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.intro__title {
+    width: 30%;
+    margin: 0 auto;
+    font-size: 45px;
+    color: rgb(146, 247, 146);
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+.intro__content .container span {
+    width: 100%;
+    display: block;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 20px;
+    line-height: 2rem;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+}
+
+.intro:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.container a {
+    display: block;
+    margin-top: 20px;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container a:hover {
+    color: gold;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.video {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 56.25%;
+}
+
+.video__media {
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* end video */
+/* gorbunok end */
+
+/* Media screen start */
+@media screen and (max-width: 1350px) {
+    .oldMan {
+        width: 250px;
+        height: 230px;
+        background-size: 100%;
+    }
+
+    .oldMan:hover {
+        background-size: 100%;
+        transition: all .5s linear;
+    }
+
+    .headstock {
+        width: 350px;
+        height: 460px;
+        background-size: 100%;
+        top: 300px;
+        right: 0;
+    }
+
+    .headstock:hover {
+        background-size: 100%;
+
+    }
+
+    .rooster-video {
+        display: none;
+    }
+
+    .intro {
+        padding-top: 5%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    nav h2 {
+        font-size: 0.9rem;
+    }
+
+    .oldMan {
+        display: none;
+    }
+
+    .headstock {
+        display: none;
+    }
+
+    .rooster-left img {
+        display: none;
+    }
+
+    .rooster-video {
+        display: none;
+    }
+
+    .intro {
+        padding-top: 10%;
+    }
+
+    .intro__content .container span {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    /* nav h2{
+        font-size: 0.9rem;
+    } */
+
+    .gold-fish img,
+    .golden-rooster img,
+    .saltan img,
+    .gorbunok img {
+        width: 50px;
+    }
+
+    .gold-fish,
+    .golden-rooster,
+    .saltan,
+    .gorbunok h3 {
+        font-size: 0.5rem;
+    }
+
+    .intro {
+        padding-top: 15%;
+    }
+
+    .intro__title {
+        margin-top: 20px;
+        font-size: 1.8rem;
+    }
+
+    .intro__content .container span {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width:860px) {
+    nav h2 {
+        font-size: 0.8rem;
+    }
+
+    .intro__title {
+        margin-top: 35px;
+        font-size: 1.6rem;
+    }
+
+    .intro__content .container span {
+        font-size: 1rem;
+        margin: 0 50px;
+    }
+
+    .intro {
+        padding-top: 20%;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .intro {
+        padding-top: 25%;
+    }
+
+    .intro__title {
+        margin-top: 45px;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .intro__content .container span {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav h2 {
+        display: none;
+    }
+
+    .intro {
+        padding-top: 40%;
+    }
+
+    .intro__content .container span {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    nav ul img {
+        margin: 0;
+        padding: 0;
+        width: 35px;
+    }
+
+    nav h2 {
+        display: none;
+    }
+
+    .gold-fish,
+    .golden-rooster,
+    .saltan,
+    .gorbunok {
+        display: none;
+    }
+
+    .skazki-mini {
+        display: block;
+        position: absolute;
+        top: 100px;
+        text-align: center;
+        left: 25%;
+        _padding: 10px 0;
+        margin: 10px auto;
+    }
+
+    .skazki-mini h3:hover {
+        color: brown;
+    }
+
+    .gold-fish-mini,
+    .golden-rooster-mini,
+    .saltan-mini,
+    .gorbunok-mini {
+        margin: 10px auto;
+    }
+
+    .intro {
+        padding-top: 50%;
+    }
+
+    .intro__content .container span {
+        display: none;
+    }
+
+}
