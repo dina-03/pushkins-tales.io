@@ -418,13 +418,14 @@ nav li img:hover {
 }
 
 .book-saltan{
-    width: 30%;
+    width: 450px;
     margin: 70px auto;
     padding-left: 50px;
     display: none;
 }
 
 .book-saltan .header{
+    width: 300px;
     padding-left: 30px;
 }
 
